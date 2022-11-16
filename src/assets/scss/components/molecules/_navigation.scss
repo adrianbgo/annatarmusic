@@ -1,0 +1,124 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  $menu-height: 40px;
+  // holder and ul general style
+  box-sizing: border-box;
+  // position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  ul {
+    list-style: none;
+    padding: 16px;
+    margin: 0;
+    li,
+    li a {
+      opacity: 0.8;
+      color: black;
+      cursor: pointer;
+      transition: 200ms;
+      text-decoration: none;
+      white-space: nowrap;
+      font-weight: 700;
+      &:hover {
+        opacity: 1;
+      }
+      a {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        text-transform: uppercase;
+      }
+    }
+    // Arrow down to the li's with dropdown
+    li {
+      padding-right: 36px;
+      &::before {
+        content: '';
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid #ffa500;
+        position: absolute;
+        right: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    .link {
+      // links don't need an arrow
+      &::before {
+        padding-right: 0;
+        display: none;
+      }
+    }
+  }
+  // the first ul is the menu, so it must be visible and have its own style
+  > ul {
+    align-self: center;
+    display: flex;
+    height: $menu-height;
+    align-items: center;
+    // background: rgba(255, 255, 255, 0.29);
+    // box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    // backdrop-filter: blur(6.3px);
+    // -webkit-backdrop-filter: blur(6.3px);
+    // the first ul elements can be a link or an li with a nested ul. the nested ul will be a dropdown
+    li {
+      position: relative;
+      margin: 0 8px;
+      // the dropdown
+      ul {
+        visibility: hidden;
+        opacity: 0;
+        padding: 0;
+        min-width: 160px;
+        background-color: #333;
+        position: absolute;
+        top: calc($menu-height + 5px);
+        left: 50%;
+        transform: translateX(-50%);
+        transition: 200ms;
+        transition-delay: 200ms;
+        // the dropdown items style
+        li {
+          margin: 0;
+          padding: 8px 16px;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          height: 30px;
+          padding-right: 40px;
+          // let's put the arrow right to the inner li's
+          &::before {
+            width: 0;
+            height: 0;
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            border-left: 5px solid #ffa500;
+          }
+          // every dropdown after the first must open to the right
+          ul {
+            top: -2%;
+            left: 100%;
+            transform: translate(0);
+          }
+          &:hover {
+            background-color: #000;
+          }
+        }
+      }
+      // on hover an li (not an <a>) must show its ul (dropdown)
+      &:hover {
+        > ul {
+          opacity: 1;
+          visibility: visible;
+          transition-delay: 0ms;
+        }
+      }
+    }
+  }
+}

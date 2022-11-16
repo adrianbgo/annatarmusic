@@ -1,7 +1,8 @@
 import React, { useMemo } from 'react';
 import { useCounter } from '@/hooks/useCounter';
+import Hero from '@/components/blocks/Hero';
 
-const Main = () => {
+const Home = () => {
   const { count, increment } = useCounter();
 
   const env: 'development' | 'production' = useMemo(() => {
@@ -10,13 +11,9 @@ const Main = () => {
 
   return (
     <>
-      <h2 className="test">Hello Vite + React!</h2>
-      <p className="env">{env}</p>
-      <button type="button" onClick={increment}>
-        count is: {count}
-      </button>
+      <Hero />
     </>
   );
 };
 
-export default Main;
+export default Home;
