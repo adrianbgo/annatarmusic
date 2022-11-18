@@ -1,4 +1,5 @@
 .cta {
+  margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
@@ -17,12 +18,11 @@
     }
   }
   .right {
-    padding: 10%;
     display: flex;
-    height: inherit;
-    justify-content: space-around;
-    align-content: space-around;
+    align-items: center;
+    justify-content: center;
     button {
+      margin: 0 10%;
       appearance: button;
       background-color: blue;
       backface-visibility: hidden;

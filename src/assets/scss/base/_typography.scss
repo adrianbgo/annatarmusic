@@ -19,6 +19,11 @@ h6,
   font-family: $heading-font-family;
 }
 
+span,
+p {
+  font-family: $body-font-family;
+}
+
 .text-base {
   font-size: $base-font-size;
 }

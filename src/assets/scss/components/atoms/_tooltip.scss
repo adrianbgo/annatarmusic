@@ -1,0 +1,19 @@
+.tooltip {
+  text-align: center;
+  margin: 2%;
+  cursor: pointer;
+  b {
+    background-color: lightgrey;
+    padding: 0.6em 2em;
+    border-radius: 12px 0;
+    color: grey;
+    .icon {
+      vertical-align: middle;
+      padding-right: 0.4em;
+    }
+    &:hover {
+      color: orange;
+      background-color: black;
+    }
+  }
+}
