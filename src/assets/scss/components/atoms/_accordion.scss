@@ -1,0 +1,47 @@
+.accordion {
+  width: 100%;
+  color: white;
+  overflow: hidden;
+  input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+  &-label {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background: darkgrey;
+    font-weight: bold;
+    cursor: pointer;
+    &:hover {
+      background: darken(darkgrey, 10%);
+    }
+    &::after {
+      content: '\276f';
+      width: 1em;
+      height: 1em;
+      text-align: center;
+      transition: all 0.35s;
+    }
+  }
+  &-body {
+    max-height: 0;
+    padding: 0 1em;
+    color: black;
+    background: white;
+    transition: all 0.35s;
+  }
+  input:checked {
+    + .accordion-label {
+      background: darken(darkgrey, 10%);
+      &::after {
+        transform: rotate(90deg);
+      }
+    }
+    ~ .accordion-body {
+      max-height: 100vh;
+      padding: 1em;
+    }
+  }
+}
