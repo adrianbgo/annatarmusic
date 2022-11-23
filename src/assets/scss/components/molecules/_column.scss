@@ -1,0 +1,35 @@
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  border: 1px solid $grey-20;
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid $grey-20;
+    padding: 1rem;
+  }
+  .title {
+    font-weight: bold;
+  }
+  small {
+    font-family: $heading-font-family;
+    font-weight: bold;
+    color: $grey-50;
+  }
+  .title,
+  .subtitle,
+  .price {
+    padding: 0;
+  }
+  .items {
+    padding: 1rem;
+  }
+  .full-terms {
+    padding: 1rem;
+    background-color: $brand-gold;
+    color: $lavender-blush;
+    font-weight: bold;
+  }
+}

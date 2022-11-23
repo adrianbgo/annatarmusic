@@ -1,9 +1,11 @@
 @charset "UTF-8";
 
-@import './abstracts/function';
-@import './abstracts/mixins';
-@import './base/reset';
-@import './base/helper';
-@import './base/typography';
+@import './abstracts/all';
+@import './base/all';
+@import '../fontawesome/scss/fontawesome.scss';
+@import '../fontawesome/scss/solid.scss';
+@import '../fontawesome/scss/brands.scss';
+@import '../fontawesome/scss/regular.scss';
+@import '../fontawesome/scss/v4-shims.scss';
 @import './components/all';
-@import './pages/home';
+@import './pages/all';

@@ -8,16 +8,16 @@
   overflow: auto;
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
-  color: black;
+  color: $rich-black;
   .modal {
-    background-color: white;
-    border: 1px solid #888;
+    background-color: $lavender-blush;
+    border: 1px solid $grey-80;
     margin: 10% auto;
     padding: 1%;
     width: 50vw;
     height: 58vh;
     .close {
-      color: darkgray;
+      color: $grey-80;
       float: right;
       font-size: 28px;
       font-weight: bold;
