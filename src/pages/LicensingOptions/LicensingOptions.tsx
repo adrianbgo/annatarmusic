@@ -1,4 +1,4 @@
-import { Comparison, Exclusives } from '@/components/blocks';
+import { Comparison, Exclusives, LearnMore } from '@/components/blocks';
 import { CaptureHeader } from '@/components/molecules';
 import React from 'react';
 
@@ -20,6 +20,12 @@ const LicensingOptions = () => {
         </div>
       </div>
       <Exclusives />
+      <LearnMore
+        header="Learn more about licensing"
+        body="I get it... Beat licensing is confusing for a lot of people. Read my article in which I explain the details and what matters to you as an artist."
+        linktext='READ "The Ultimate Guide to Online Beat Licensing"'
+        linkurl="/"
+      />
     </div>
   );
 };

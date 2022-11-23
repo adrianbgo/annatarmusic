@@ -3,7 +3,7 @@ import React from 'react';
 const Exclusives = () => {
   return (
     <div className="exclusives">
-      <img src="/" alt="Annatar On Stage" />
+      <img src="https://via.placeholder.com/450x450" alt="Annatar On Stage" />
       <div className="right">
         <p className="text-h2">Interested in exclusive rights?</p>
         <p className="body">I don't sell exclusive rights to every artist.</p>

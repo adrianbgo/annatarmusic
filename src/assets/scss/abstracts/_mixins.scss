@@ -76,3 +76,12 @@
     src: $src;
   }
 }
+
+@mixin button() {
+  background-color: $brand-gold;
+  padding: 1rem 3rem;
+  width: 90%;
+  text-align: center;
+  border-radius: 25px 0;
+  font-weight: bold;
+}
