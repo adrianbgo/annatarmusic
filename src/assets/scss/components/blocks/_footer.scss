@@ -1,0 +1,24 @@
+.footer {
+  padding: 4rem 10rem;
+  background: $rich-black;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 4fr;
+  #email {
+    grid-column: 4;
+  }
+  .column {
+    border: none;
+    color: $lavender-blush;
+    .head {
+      font-weight: bolder;
+      margin-bottom: 2rem;
+    }
+    .link {
+      margin-bottom: 1rem;
+      color: $grey-10;
+      &:hover {
+        color: $brand-gold;
+      }
+    }
+  }
+}

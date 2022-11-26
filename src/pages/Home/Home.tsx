@@ -1,5 +1,5 @@
 import React from 'react';
-import { Hero, BeatStore } from '@/components/blocks';
+import { Hero, BeatStore, Bio } from '@/components/blocks';
 import { Tooltip } from '@/components/atoms';
 import CTA from '@/components/molecules/CTA';
 import useModal from '@/hooks/useModal';
@@ -48,6 +48,7 @@ const Home = () => {
       />
       <LicensingHelp hide={toggle} isShowing={isShowing} />
       <FAQ questions={questions} />
+      <Bio />
     </>
   );
 };

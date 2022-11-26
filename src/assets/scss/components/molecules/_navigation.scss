@@ -1,4 +1,5 @@
 .navbar {
+  font-family: $heading-font-family;
   display: flex;
   justify-content: space-between;
   $menu-height: 40px;
@@ -70,6 +71,9 @@
     li {
       position: relative;
       margin: 0 8px;
+      a {
+        text-transform: capitalize;
+      }
       // the dropdown
       ul {
         visibility: hidden;
