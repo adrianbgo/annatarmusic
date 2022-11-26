@@ -1,0 +1,24 @@
+.learnmore {
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  padding: 5rem 5rem;
+  .button {
+    margin: auto;
+    @include button();
+    background-color: $rich-black;
+    color: lighten($brand-gold, 15%);
+    width: 60%;
+    font-weight: bold;
+  }
+  p {
+    padding-bottom: 2rem;
+  }
+  .body {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  .text-h2 {
+    font-weight: bolder;
+  }
+}

@@ -8,7 +8,7 @@ const Navigation = () => {
     <div className="navbar">
       <Logo />
       <ul>
-        <li>
+        <li className="top">
           Buy Beats
           <ul>
             <li className="link">
@@ -22,21 +22,21 @@ const Navigation = () => {
             </li>
           </ul>
         </li>
-        <li>
+        <li className="top">
           Licensing
           <ul>
             <li className="link">
-              <Link to="/">Licensing Options</Link>
+              <Link to="/licensing-options">Licensing Options</Link>
             </li>
             <li className="link">
               <Link to="/">Upgrade License</Link>
             </li>
           </ul>
         </li>
-        <li className="link">
+        <li className="top link grey">
           <Link to="/">Blog</Link>
         </li>
-        <li>
+        <li className="top">
           About
           <ul>
             <li className="link">

@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
-  background-color: yellow;
+  background-color: $brand-gold;
   padding: 1vh;
   height: 15vh;
   color: black;
@@ -24,7 +24,7 @@
     button {
       margin: 0 10%;
       appearance: button;
-      background-color: blue;
+      background-color: $brand-primary;
       backface-visibility: hidden;
       border-radius: 6px;
       border-width: 0;

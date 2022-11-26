@@ -1,0 +1,26 @@
+.licensing-options {
+  .upgrade-offer {
+    text-align: center;
+    margin: 2rem;
+    color: $grey-60;
+    a {
+      color: $brand-primary;
+    }
+  }
+  p {
+    text-align: center;
+  }
+  .license-upgrade {
+    margin: 4rem;
+    .help-choose-link {
+      margin: 2rem;
+      text-align: center;
+      a {
+        color: $lavender-blush;
+        background-color: $brand-gold;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem 0;
+      }
+    }
+  }
+}

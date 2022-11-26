@@ -1,0 +1,23 @@
+.exclusives {
+  background-color: $rich-black;
+  color: $lavender-blush;
+  display: grid;
+  padding: 5rem 30rem;
+  grid-template-columns: 1fr 1fr;
+  .right {
+    display: block;
+    margin: auto;
+    margin-left: 4rem;
+    p {
+      text-align: left;
+      margin-bottom: 2rem;
+    }
+    .inquiry {
+      @include button();
+    }
+  }
+  img {
+    margin: auto;
+    margin-right: 4rem;
+  }
+}
