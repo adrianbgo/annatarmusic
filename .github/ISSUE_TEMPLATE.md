@@ -1,11 +1,28 @@
-## 🤷 이슈 내용
+### Prerequisites
 
-<!-- 무슨 이슈인가요? -->
+* [ ] Can you reproduce the problem in safe mode?
+* [ ] Are you running the latest version?
+* [ ] Did you check the debugging guide?
+* [ ] Did you check the FAQs on Discuss?
+* [ ] Are you reporting to the correct repository?
+* [ ] Did you perform a cursory search?
 
-## ✨ 기대 결과
+For more information, see the `CONTRIBUTING` guide.
 
-<!-- 어떤 결과물을 원하시나요? -->
+### Description
 
-## 📸 스크린샷
+[Description of the bug or feature]
 
-<!-- 이슈에 해당하는 부분을 보여주세요. -->
+### Steps to Reproduce
+
+1. [First Step]
+2. [Second Step]
+3. [and so on...]
+
+**Expected behavior:** [What you expected to happen]
+
+**Actual behavior:** [What actually happened]
+
+### Versions
+
+You can get this information from executing `npm version`.
